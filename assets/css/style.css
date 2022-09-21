@@ -307,15 +307,6 @@ header::after {
   align-items: center;
 }
 
-.club-picture{
-  height: 60vh;
-  background: url(../img/club.jpg) no-repeat center/contain;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .info-title h1{
   font-family: 'Rajdhani', sans-serif;
   color: #fff;
@@ -458,7 +449,6 @@ footer{
 .footer{
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
-  margin: auto;
   width: 95%;
   padding-top: 5em;
   padding-bottom: 5em;
@@ -493,7 +483,54 @@ footer{
   text-align: center;
   font-family: 'Rajdhani', sans-serif;
   padding-bottom: 1em;
+}
 
+.fights-picture{
+  height: 60vh;
+  background: url(../img/fights.jpg) no-repeat top/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fight-videos{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.fight-videos video{
+  width: 100%;
+}
+
+.fight-videos h1{
+  font-size: 5em;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.fight-videos h3{
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 3em;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+}
+
+.fight-videos span{
+  color: #b30000;
+}
+
+.fight-videos a{
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.5em;
+  margin-top: 0.7em;
+  margin-bottom: 0.3em;
+  text-decoration: none;
+  color: #444;
 }
 
 @media(max-width: 786px) {
@@ -587,5 +624,11 @@ footer{
 .club-logos{
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 4em;
+}
+.fight-videos h1{
+  font-size: 3em;
+}
+.fight-videos h3{
+  font-size: 1.5em;
 }
 }
