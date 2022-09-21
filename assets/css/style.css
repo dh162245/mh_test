@@ -244,6 +244,7 @@ header::after {
     font-family: 'Rajdhani', sans-serif;
     letter-spacing: 3px;
     margin-top: 2em;
+    color: #fff;
   }
 
 #sponsoring{
@@ -254,6 +255,8 @@ header::after {
     width: 80%;
     margin: 7em auto;
 }
+
+
 
 #sponsoring h3{
     font-family: 'Oswald', sans-serif;
@@ -273,8 +276,17 @@ header::after {
     color: #444;
 }
 
-#sponsoring img{
+#sponsoring a img{
     width: 50%;
+}
+
+#sponsoring a{
+  text-align: center;
+}
+
+#sponsoring a:hover{
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out;
 }
 
 .info-title{
@@ -394,19 +406,24 @@ span{
   margin: 1em;
 }
 .club{
-  width: 90%;
+  width: 100%;
   margin: 1em auto;
 }
 .club h1{
   font-size: 3em;
   color: #b30000;
+  text-align: center;
+  background: #000;
+  padding-top: 1.4em;
+  padding-bottom: 0.4em;
   font-family: 'Homemade Apple', cursive;
 }
 
 .club h2{
+  width: 90%;
   font-size: 2em;
   font-family: 'Rajdhani', sans-serif;
-  margin-bottom: 1em;
+  margin: 1em auto;
 }
 
 .club a{
@@ -421,6 +438,18 @@ span{
   transition: 0.5s ease-in;
 }
 
+.club-logos{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 5%;
+  gap: 5%;
+  align-items: center;
+}
+
+.club-logos img{
+  width: 100%;
+}
+
 footer{
   background-color: #000;
   color: #444;
@@ -428,12 +457,17 @@ footer{
 
 .footer{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
   margin: auto;
   width: 95%;
-  align-items: center;
   padding-top: 5em;
   padding-bottom: 5em;
+  gap: 3%;
+}
+
+.footer-logo{
+  text-align: center;
+  font-size: 3em;
 }
 
 .footer ul{
@@ -549,5 +583,9 @@ footer{
   grid-template-columns: 1fr;
   text-align: center;
   width: 100%;  
+}
+.club-logos{
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 4em;
 }
 }
