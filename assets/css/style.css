@@ -194,7 +194,7 @@ header::after {
     margin-top: 10%;
   }
 
-  #video{
+  #player{
     object-fit: cover;
     width: 100vw;
     height: 100vh;
@@ -323,6 +323,7 @@ header::after {
   margin: 5% auto;
   grid-template-columns: 1fr 1fr;
   gap: 5%;
+  padding-bottom: 3em;
 }
 
 #bio img{
@@ -519,6 +520,7 @@ footer{
 
 #bio{
   grid-template-columns: 1fr;
+  padding-bottom: 15em;
 }
 
 #bio img:nth-of-type(2){
