@@ -12,6 +12,7 @@ font-family: 'Rajdhani', sans-serif; */
     scroll-behavior: smooth;
 }
 
+
 body::-webkit-scrollbar {
     display: none;
     -ms-overflow-style: none;
@@ -87,9 +88,9 @@ nav ul li:nth-last-child(1){
 }
 
 header{
-    /* background: url('../img/header.jpg') no-repeat;
+    background: url('../img/hero1.jpg') no-repeat;
     background-position: top;
-    background-size: cover; */
+    background-size: cover;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -134,7 +135,7 @@ header h1, header h2, header a{
     transition: 0.5s ease-in;
 }
 
-header::after {
+/* header::after {
     content: "";
     background: url(../img/hero1.JPG);
     background-position: top;
@@ -148,7 +149,7 @@ header::after {
     right: 0;
     position: absolute;
     z-index: -1;   
-  }
+  } */
 
   #info{
     display: grid;
@@ -540,10 +541,10 @@ footer{
         top: 0;
         margin-top: 16px;
   }
-
   nav ul {
         max-height: 0px;
         background: #000;
+
   }
 
   nav.black ul {
@@ -631,4 +632,26 @@ footer{
 .fight-videos h3{
   font-size: 1.5em;
 }
+.team-picture{
+  margin-top: 80px;
+  background-size: contain;
+  height: 60vh;
 }
+.team{
+  grid-template-columns: 1fr;
+  margin-bottom: 100px;
+}
+.fights-picture{
+  margin-top: 50px;
+}
+.info-title{
+  margin-top: 80px;
+}
+header{
+  margin-top: 70px;
+}
+#info img:first-child{
+  display: none;
+}
+}
+
