@@ -88,7 +88,7 @@ nav ul li:nth-last-child(1){
 }
 
 header{
-    background: url('../img/hero1.jpg') no-repeat;
+    background: url('https://www.martin-houben.de/assets/img/hero1.jpg') no-repeat;
     background-position: top;
     background-size: cover;
     height: 100vh;
@@ -399,15 +399,15 @@ span{
 }
 .club{
   width: 100%;
-  margin: 1em auto;
+  margin: 0 auto;
 }
 .club h1{
   font-size: 3em;
   color: #b30000;
   text-align: center;
   background: #000;
-  padding-top: 1.4em;
-  padding-bottom: 0.4em;
+  padding-top: 2em;
+  padding-bottom: 0.8em;
   font-family: 'Homemade Apple', cursive;
 }
 
@@ -426,7 +426,7 @@ span{
 }
 
 .club a:hover{
-  color: #b30000;
+  transform: scale(1.1);
   transition: 0.5s ease-in;
 }
 
@@ -534,6 +534,15 @@ footer{
   color: #444;
 }
 
+.news{
+  width: 35%;
+  margin: 3em auto;
+}
+
+.news img{
+  width: 100%;
+}
+
 @media(max-width: 786px) {
 
   .logo {
@@ -624,7 +633,7 @@ footer{
 }
 .club-logos{
   grid-template-columns: repeat(2, 1fr);
-  margin-bottom: 4em;
+  margin-bottom: 7em;
 }
 .fight-videos h1{
   font-size: 3em;
@@ -641,6 +650,9 @@ footer{
   grid-template-columns: 1fr;
   margin-bottom: 100px;
 }
+.card{
+  grid-template-columns: 1fr;
+}
 .fights-picture{
   margin-top: 50px;
 }
@@ -652,6 +664,9 @@ header{
 }
 #info img:first-child{
   display: none;
+}
+.news{
+  width: 90%;
 }
 }
 
